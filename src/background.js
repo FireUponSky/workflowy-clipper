@@ -77,7 +77,7 @@ function clipToWorkflowy(title, comment, callback) {
             { "type":"edit",
               "data": {
                   "projectid":   newuuid,
-                  "name":        htmlEsc(title),
+                  "name":        "<b>" + htmlEsc(title) + "</b>",
                   "description": htmlEsc(comment)
               },
               "client_timestamp": timestamp,
